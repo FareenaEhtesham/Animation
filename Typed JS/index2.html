@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        overflow: hidden;
+    }
+    .practice{
+        border: 1px solid black;
+        position: relative;
+        left: 23%;
+        margin-top: 13%;
+        width: 56%;
+        height: 50vh;
+    }
+
+    img{
+        width: 40%;
+        height: 40vh;
+        
+        margin-top: 5%;
+    }
+    .typing{
+        font-weight: 100;
+        font-style: italic;  
+        position: relative;
+        left:48% ;
+        bottom: 70%;
+    }
+    h1::after{
+        content: '|';
+       
+    }
+</style>
+<body>
+    
+    <div class="practice" >
+        <img src="https://www.kindpng.com/picc/m/78-788134_javascript-logo-hd-png-download.png"/>
+        <h1 class="typing">
+        
+        </h1>
+    </div>
+
+  
+<script src="typed.js"></script>
+<script>
+
+
+    var typed = new Typed('.typing', {
+    strings: ['This is a JavaScript library',
+    'Just Use JavaScript Library <br/> <b>Typed.JS</b> Have Fun!'],
+    typeSpeed : 100,
+    // loop : true,
+    showCursor : false,
+    startDelay :100,
+   
+    
+});
+</script>
+
+
+</body>
+</html>
